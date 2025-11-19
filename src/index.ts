@@ -142,7 +142,7 @@ bot.callbackQuery("about_us", async (ctx) => {
 bot.callbackQuery("manager", async (ctx) => {
   await ctx.answerCallbackQuery();
   const keyboard = new InlineKeyboard()
-    .url("Написать менеджеру", "https://t.me/@BTC_none")
+    .url("Написать менеджеру", "https://t.me/BTC_none")
     .text("Назад", "back_to_start");
   await safeEdit(
     ctx,
